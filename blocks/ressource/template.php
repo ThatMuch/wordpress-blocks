@@ -5,18 +5,18 @@
  */
 $data = get_field('template');
 $post_img = get_field('template', false, false);
-var_dump($data); // For debugging purposes, remove in production
+var_dump($data->post_title); // For debugging purposes, remove in production
 ?>
 
 <section id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($class_name); ?>">
 	<!-- <div>
 		<h3>Template</h3>
 		<div class="divider"></div>
-		<h2><?php //echo esc_html($data['post_title']);
+		<h2><?php //echo esc_html($data->post_title);
 			?></h2>
-		<p><?php //echo esc_html($data['post_excerpt']);
+		<p><?php //echo esc_html($data->post_excerpt);
 			?></p>
-		<a class="btn" href="<?php //echo esc_url($data['post_name']);
+		<a class="btn" href="<?php //echo esc_url($data->post_name);
 								?>">Télécharger gratuitement le modèle</a>
 	</div> -->
 	<?php echo get_the_post_thumbnail($post_img, 'full'); ?>

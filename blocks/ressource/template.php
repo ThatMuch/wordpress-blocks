@@ -5,7 +5,7 @@
  */
 $data = get_field('template');
 $post_img = get_field('template', false, false);
-var_dump($data['post_title']); // For debugging purposes, remove in production
+var_dump($data); // For debugging purposes, remove in production
 ?>
 
 <section id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($class_name); ?>">

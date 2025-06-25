@@ -1,0 +1,21 @@
+{
+	"name": "ressource-block",
+	"title": "Ressource Block",
+	"category": "common",
+	"icon": "admin-comments",
+	"style": [
+		"file:./style.css"
+	],
+	"keywords": [
+		"ressource",
+		"custom",
+		"block"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./block.php"
+	},
+	"supports": {
+		"align": true
+	}
+}

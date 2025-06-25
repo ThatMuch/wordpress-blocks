@@ -41,7 +41,7 @@ function my_custom_acf_blocks_register_blocks()
 			'keywords'          => array('first', 'custom', 'block'), // Search keywords for the block inserter
 			'mode'              => 'auto', // How the block editor handles the block. 'auto' (default), 'preview', 'edit'.
 			'enqueue_style'     => plugin_dir_url(__FILE__) . 'blocks/ressource/style.css', // Enqueue block-specific stylesheet
-			'enqueue_script'    => plugin_dir_url(__FILE__) . 'blocks/ressource/script.js', // Enqueue block-specific javascript
+			//'enqueue_script'    => plugin_dir_url(__FILE__) . 'blocks/ressource/script.js', // Enqueue block-specific javascript
 			'supports'          => array( // Gutenberg block features support
 				'align'     => true, // Allow alignment options (wide, full, left, center, right)
 				'mode'      => false, // Disable block editing mode toggle in editor

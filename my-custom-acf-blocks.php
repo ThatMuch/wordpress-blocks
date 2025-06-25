@@ -30,24 +30,34 @@ function my_custom_acf_blocks_register_blocks()
 	// acf_register_block_type() is the primary function for registering blocks.
 	if (function_exists('acf_register_block_type')) {
 
-		// Register "My First Block"
-		acf_register_block_type(array(
-			'name'              => 'ressource-block', // Unique slug for the block
-			'title'             => __('Ressource Block', 'my-custom-acf-blocks'), // Displayed title in editor
-			'description'       => __('A simple custom block created with ACF.', 'my-custom-acf-blocks'), // Description in editor
-			'render_template'   => plugin_dir_path(__FILE__) . 'blocks/ressource/template.php', // Path to the block's PHP template
-			'category'          => 'common', // Category in the block inserter (e.g., 'common', 'formatting', 'layout', 'widgets', 'embed')
-			'icon'              => 'admin-comments', // Dashicons slug or SVG markup
-			'keywords'          => array('first', 'custom', 'block'), // Search keywords for the block inserter
-			'mode'              => 'auto', // How the block editor handles the block. 'auto' (default), 'preview', 'edit'.
-			'enqueue_style'     => plugin_dir_url(__FILE__) . 'blocks/ressource/style.css', // Enqueue block-specific stylesheet
-			'enqueue_script'    => plugin_dir_url(__FILE__) . 'blocks/ressource/script.js', // Enqueue block-specific javascript
-			'supports'          => array( // Gutenberg block features support
-				'align'     => true, // Allow alignment options (wide, full, left, center, right)
-				'mode'      => false, // Disable block editing mode toggle in editor
-				//'jsx'       => true, // Enable JSX for inner block content. Requires ACF 6.0+
-			),
-		));
+		// When using a block.json file, WordPress automatically registers the block.
+		// ACF then extends this registration.
+		// It's generally recommended to remove the acf_register_block_type() call
+		// for blocks that have a block.json file, as block.json handles most properties
+		// including asset enqueuing and render template.
+		// If you need to add ACF-specific settings not covered by block.json,
+		// you can still use acf_register_block_type() but be mindful of conflicts.
+		// For asset enqueuing, block.json's 'style' property is preferred.
+		//
+		// The 'ressource-block' is defined via block.json, so this PHP registration
+		// is redundant and potentially conflicting for asset loading.
+		//
+		// acf_register_block_type(array(
+		// 	'name'              => 'ressource-block',
+		// 	'title'             => __('Ressource Block', 'my-custom-acf-blocks'),
+		// 	'description'       => __('A simple custom block created with ACF.', 'my-custom-acf-blocks'),
+		// 	'render_template'   => plugin_dir_path(__FILE__) . 'blocks/ressource/template.php',
+		// 	'category'          => 'common',
+		// 	'icon'              => 'admin-comments',
+		// 	'keywords'          => array('first', 'custom', 'block'),
+		// 	'mode'              => 'auto',
+		// 	'enqueue_style'     => plugin_dir_url(__FILE__) . 'blocks/ressource/style.css',
+		// 	'enqueue_script'    => plugin_dir_url(__FILE__) . 'blocks/ressource/script.js',
+		// 	'supports'          => array(
+		// 		'align'     => true,
+		// 		'mode'      => false,
+		// 	),
+		// ));
 
 		// Add more blocks here by calling acf_register_block_type() again for each.
 		// Example for a second block:

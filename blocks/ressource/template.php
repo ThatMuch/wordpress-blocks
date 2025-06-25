@@ -5,7 +5,6 @@
  */
 $data = get_field('template');
 $post_img = get_field('template', false, false);
-var_dump($data); // For debugging purposes, remove in production
 ?>
 
 <section id="<?php echo esc_attr($block_id); ?>" class="TemplateSection">

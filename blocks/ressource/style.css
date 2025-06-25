@@ -107,7 +107,9 @@
   width: 15.67956rem;
 }
 
-
+a {
+	text-decoration: none;
+}
 .btn {
 	border: none;
 	display: inline-flex;

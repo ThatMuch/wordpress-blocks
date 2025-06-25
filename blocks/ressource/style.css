@@ -56,7 +56,66 @@
 	--project-900: #4f792d;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "NeueMachina", sans-serif;
+  font-weight: 700 !important;
+  margin-top: 1.5rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+.divider {
+	margin-top: 8px;
+	height: 4px;
+	width: 96px;
+	background: linear-gradient(
+		90deg,
+		rgb(15, 199, 210) 0%,
+		rgb(15, 199, 210) 24%,
+		rgb(159, 223, 108) 25%,
+		rgb(159, 223, 108) 49%,
+		rgb(253, 197, 0) 50%,
+		rgb(253, 197, 0) 74%,
+		rgb(222, 61, 100) 75%,
+		rgb(222, 61, 100) 100%
+	);
+  }
+
 .TemplateSection {
+	font-family: "SpaceMono", sans-serif;
 	display: flex;
   border-radius: 6.25rem;
   padding: 3.5rem;
@@ -72,4 +131,35 @@
 .TemplateSection img {
   border-radius: 2.75rem;
   width: 15.67956rem;
+}
+
+
+.btn {
+	border: none;
+	display: inline-flex;
+	font-weight: 700;
+	height: 2.75rem;
+	padding: 1rem;
+	align-items: center;
+	gap: .5rem;
+	flex-shrink: 0;
+	border-radius: 6.25rem;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:focus-visible {
+    outline: 3px solid;
+  }
+
+  .btn-dev {
+    color: var(--neutral-900);
+    background-color: var(--dev-500);
+}
+.btn-dev:hover {
+  color: var(--neutral-900);
+  background-color: var(--dev-500);
+  text-decoration: none;
 }

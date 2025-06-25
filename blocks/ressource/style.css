@@ -56,7 +56,40 @@
 	--project-900: #4f792d;
 }
 
-h1,
+
+.divider {
+	margin-top: 8px;
+	height: 4px;
+	width: 96px;
+	background: linear-gradient(
+		90deg,
+		rgb(15, 199, 210) 0%,
+		rgb(15, 199, 210) 24%,
+		rgb(159, 223, 108) 25%,
+		rgb(159, 223, 108) 49%,
+		rgb(253, 197, 0) 50%,
+		rgb(253, 197, 0) 74%,
+		rgb(222, 61, 100) 75%,
+		rgb(222, 61, 100) 100%
+	);
+  }
+
+.TemplateSection {
+	font-family: "SpaceMono", sans-serif;
+	display: flex;
+  border-radius: 6.25rem;
+  padding: 3.5rem;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: url("../../assets/Background_Light.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset -3px -3px rgba(63, 210, 219, 0.5),
+    inset 3px 3px rgba(231, 249, 251, 0.5);
+  margin-bottom: 3.5rem;
+
+
+  h1,
 h2,
 h3,
 h4,
@@ -97,36 +130,6 @@ h6,
   font-size: 1rem;
 }
 
-.divider {
-	margin-top: 8px;
-	height: 4px;
-	width: 96px;
-	background: linear-gradient(
-		90deg,
-		rgb(15, 199, 210) 0%,
-		rgb(15, 199, 210) 24%,
-		rgb(159, 223, 108) 25%,
-		rgb(159, 223, 108) 49%,
-		rgb(253, 197, 0) 50%,
-		rgb(253, 197, 0) 74%,
-		rgb(222, 61, 100) 75%,
-		rgb(222, 61, 100) 100%
-	);
-  }
-
-.TemplateSection {
-	font-family: "SpaceMono", sans-serif;
-	display: flex;
-  border-radius: 6.25rem;
-  padding: 3.5rem;
-  align-items: center;
-  gap: 1.5rem;
-  background-image: url("../../assets/Background_Light.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: inset -3px -3px rgba(63, 210, 219, 0.5),
-    inset 3px 3px rgba(231, 249, 251, 0.5);
-  margin-bottom: 3.5rem;
 }
 .TemplateSection img {
   border-radius: 2.75rem;

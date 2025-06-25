@@ -3,7 +3,7 @@
 /**
  * Template for the Ressource Block
  */
-$data = get_field('template');
+$data = get_field('template', false, false);
 var_dump($data); // For debugging purposes, remove in production
 ?>
 

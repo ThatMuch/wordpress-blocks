@@ -1,0 +1,75 @@
+:root {
+	--com-50: #fcecf0;
+	--com-100: #f5c3cf;
+	--com-200: #f0a6b8;
+	--com-300: #e97d97;
+	--com-400: #e56483;
+	--com-500: #de3d64;
+	--com-600: #ca385b;
+	--com-700: #9e2b47;
+	--com-800: #7a2237;
+	--com-900: #5d1a2a;
+
+	--design-50: #fff9e6;
+	--design-100: #feedb0;
+	--design-200: #fee48a;
+	--design-300: #fed854;
+	--design-400: #fdd133;
+	--design-500: #fdc500;
+	--design-600: #e6b300;
+	--design-700: #b48c00;
+	--design-800: #8b6c00;
+	--design-900: #6a5300;
+
+	--dev-50: #e7f9fb;
+	--dev-100: #b5eef1;
+	--dev-200: #91e5ea;
+	--dev-300: #5ed9e1;
+	--dev-400: #3fd2db;
+	--dev-500: #3fd2db;
+	--dev-600: #0eb5bf;
+	--dev-700: #0b8d95;
+	--dev-800: #086d74;
+	--dev-900: #065458;
+
+	--neutral-0: #f8f8fb;
+	--neutral-50: #edeaf6;
+	--neutral-100: #c6bde2;
+	--neutral-200: #ab9dd4;
+	--neutral-300: #8470c1;
+	--neutral-400: #6d55b5;
+	--neutral-500: #482aa2;
+	--neutral-600: #422693;
+	--neutral-700: #331e73;
+	--neutral-800: #281759;
+	--neutral-900: #1e1244;
+
+	--project-50: #f5fcf0;
+	--project-100: #e1f5d1;
+	--project-200: #d3f0bb;
+	--project-300: #bfea9d;
+	--project-400: #b2e589;
+	--project-500: #9fdf6c;
+	--project-600: #91cb62;
+	--project-700: #719e4d;
+	--project-800: #577b3b;
+	--project-900: #4f792d;
+}
+
+.TemplateSection {
+	display: flex;
+  border-radius: 6.25rem;
+  padding: 3.5rem;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: url("../../assets/Background_Light.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset -3px -3px rgba(63, 210, 219, 0.5),
+    inset 3px 3px rgba(231, 249, 251, 0.5);
+  margin-bottom: 3.5rem;
+  img {
+    border-radius: 2.75rem;
+    width: 15.67956rem;
+  }
+}

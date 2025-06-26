@@ -17,13 +17,8 @@ $post_id = $data->ID;
 $post_slug = get_post_field('post_name', $post_id);
 // get post thumbnail
 $post_img = get_the_post_thumbnail_url($post_id, 'full');
-// get post excerpt
-if (empty($data->post_excerpt)) {
-	$data->post_excerpt = get_the_excerpt($post_id);
-} else {
-	$data->post_excerpt = $data->post_excerpt;
-}
-
+// get post excerpt from post id
+$post_excerpt = get_post_field('post_excerpt', $post_id);
 
 ?>
 
@@ -33,10 +28,11 @@ if (empty($data->post_excerpt)) {
 		<div class="divider"></div>
 		<h2><?php echo esc_html($data->post_title);
 			?></h2>
-		<p><?php echo esc_html($data->post_excerpt);
+		<p><?php echo esc_html($post_excerpt);
 			?></p>
-		<a class="btn btn-dev" href="/ressources/templates/<?php echo $data->post_name;
-															?>">Télécharger gratuitement</a>
+		<a class="btn btn-dev" href="/ressources/templates/<?php echo $post_slug; ?>">
+			Télécharger gratuitement
+		</a>
 	</div>
-	<?php echo get_the_post_thumbnail($post_img, 'full'); ?>
+	<?php echo $post_img; ?>
 </section>

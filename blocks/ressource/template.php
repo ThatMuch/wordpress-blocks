@@ -16,7 +16,9 @@ $post_id = $data->ID;
 // get post slug from post id
 $post_slug = get_post_field('post_name', $post_id);
 // get post thumbnail
-$post_img = get_the_post_thumbnail_url($post_id, 'full');
+$post_img = get_the_post_thumbnail($post_id, 'full', array(
+	'alt'   => $data->post_title,
+));
 // get post excerpt from post id
 $post_excerpt = get_post_field('post_excerpt', $post_id);
 

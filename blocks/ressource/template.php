@@ -24,7 +24,7 @@ $post_img = get_field('template', false, false);
 		<p><?php echo esc_html($data->post_excerpt);
 			?></p>
 		<a class="btn btn-dev" href="/ressources/templates/<?php echo esc_url($data->post_name);
-															?>">Télécharger gratuitement le modèle</a>
+															?>">Télécharger gratuitement</a>
 	</div>
 	<?php echo get_the_post_thumbnail($post_img, 'full'); ?>
 </section>

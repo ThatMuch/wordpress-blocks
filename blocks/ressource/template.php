@@ -12,8 +12,14 @@ if (! empty($block['anchor'])) {
 }
 
 $data = get_field('template');
+$post_id = $data->ID;
 $post_img = get_field('template', false, false);
+// get post slug from post id
+$post_slug = get_post_field('post_name', $post_id);
+
 var_dump($data);
+var_dump($post_img);
+var_dump($post_slug);
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="TemplateSection">

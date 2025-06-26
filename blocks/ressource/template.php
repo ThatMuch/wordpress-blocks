@@ -13,6 +13,7 @@ if (! empty($block['anchor'])) {
 
 $data = get_field('template');
 $post_img = get_field('template', false, false);
+var_dump($data);
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="TemplateSection">

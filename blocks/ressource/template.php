@@ -18,7 +18,9 @@ $post_img = get_field('template', false, false);
 $post_slug = get_post_field('post_name', $post_id);
 
 var_dump($data);
+print_r("-----------");
 var_dump($post_img);
+print_r("-----------");
 var_dump($post_slug);
 ?>
 
